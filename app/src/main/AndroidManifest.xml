@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ModuloDivide"></activity>
+        <activity android:name=".FactPrime"></activity>
+        <activity android:name=".CheckPrime" />
+        <activity android:name=".RevertModulo" />
+        <activity android:name=".ModuloDivide" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,53 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModuloDivide">
-
-    <EditText
-        android:id="@+id/etA"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="10dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="60dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:text="A = "
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <EditText
-        android:id="@+id/etM"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="10dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="60dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:text="M = "
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    tools:context=".CheckPrime">
 
     <TextView
         android:id="@+id/textView"
@@ -58,7 +12,7 @@
         android:layout_height="100dp"
         android:background="@color/purple_200"
         android:gravity="center"
-        android:text="Modulo b = (a power m) mod n"
+        android:text="Check Prime N"
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etA" />
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
 
     <TextView
         android:id="@+id/tvRes"
@@ -115,5 +69,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFactPrime" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

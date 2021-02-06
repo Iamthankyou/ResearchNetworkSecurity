@@ -26,7 +26,7 @@ public class ModuloDivide extends AppCompatActivity {
         etN = (EditText)findViewById(R.id.etN);
         etM = (EditText)findViewById(R.id.etM);
         etA = (EditText)findViewById(R.id.etA);
-        btnSubmit = (Button)findViewById(R.id.btnSubmit);
+        btnSubmit = (Button)findViewById(R.id.btnFactPrime);
         tvRes = (TextView)findViewById(R.id.tvRes);
 
         tvRes.setVisibility(View.GONE);
@@ -47,6 +47,7 @@ public class ModuloDivide extends AppCompatActivity {
                     tvRes.setText("B="+String.valueOf(result)+"\n"+res.toString());
                 }
                 else{
+                    tvRes.setText("");
                     Toast.makeText(ModuloDivide.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 }
             }
