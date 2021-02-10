@@ -1,20 +1,20 @@
 package com.example.modulo;
 
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import io.github.kexanie.library.MathView;
 
 public class ModuloDivide extends AppCompatActivity {
 
     private EditText etN,etA,etM;
     private Button btnSubmit;
-    private TextView tvRes;
+    private MathView tvRes,textView;
     private StringBuilder res;
 
     @Override
@@ -27,9 +27,12 @@ public class ModuloDivide extends AppCompatActivity {
         etM = (EditText)findViewById(R.id.etM);
         etA = (EditText)findViewById(R.id.etA);
         btnSubmit = (Button)findViewById(R.id.btnFactPrime);
-        tvRes = (TextView)findViewById(R.id.tvRes);
+        tvRes = (MathView)findViewById(R.id.tvRes);
+        textView = (MathView)findViewById(R.id.textView);
 
-        tvRes.setVisibility(View.GONE);
+        textView.setText("$$\\color{white}{Modulo\\;B\\;=\\;A^M\\;mod\\;N}$$");
+
+//        tvRes.setVisibility(View.GONE);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,9 +45,10 @@ public class ModuloDivide extends AppCompatActivity {
                     res = new StringBuilder();
                     long result = getModulo(N,M,A);
                     tvRes.refreshDrawableState();
-                    tvRes.clearComposingText();
-                    tvRes.setVisibility(View.VISIBLE);
-                    tvRes.setText("B="+String.valueOf(result)+"\n"+res.toString());
+//                    tvRes.clearComposingText();
+//                    tvRes.setVisibility(View.VISIBLE);
+//                    tvRes.setLatex("B="+String.valueOf(result)+"\n"+res.toString());
+                    tvRes.setText("$$\\color{red}{B="+String.valueOf(result)+"}$$"+"\n"+res.toString());
                 }
                 else{
                     tvRes.setText("");
@@ -53,7 +57,7 @@ public class ModuloDivide extends AppCompatActivity {
             }
         });
 
-        tvRes.setMovementMethod(new ScrollingMovementMethod());
+//        tvRes.setMovementMethod(new ScrollingMovementMethod());
 
     }
 
@@ -69,16 +73,21 @@ public class ModuloDivide extends AppCompatActivity {
         long tmp;
 
         if (m%2==0){
+            long x1 = m/2;
             tmp = getModulo(n,m/2,a);
             long tmp1 = tmp;
             tmp = (tmp*tmp)%n;
-            res.append(String.valueOf(a)+"^"+String.valueOf(m)+" mod "+String.valueOf(n)+"= ("+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+")"+"%"+String.valueOf(n)+"="+String.valueOf(tmp)+"\n");
+            res.append("$$\\color{white}{"+String.valueOf(a)+"^{"+String.valueOf(m)+"}"+"\\; mod \\;"+String.valueOf(n)+"\\; = (" + String.valueOf(a)+"^{"+String.valueOf(x1)+"} \\;\\times\\;"+ String.valueOf(a)+"^{"+String.valueOf(x1)+"})\\;mod\\;"+ String.valueOf(n)+"\\;=\\;"+String.valueOf(tmp)+"}$$");
+//            res.append(String.valueOf(a)+"\\{^}"+String.valueOf(m)+" mod "+String.valueOf(n)+"= ("+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+")"+"%"+String.valueOf(n)+"="+String.valueOf(tmp)+"\n");
         }
         else{
+            long x1 = m/2;
             tmp = getModulo(n,m/2,a);
             long tmp1 = tmp;
             tmp = (a*tmp*tmp)%n;
-            res.append(String.valueOf(a)+"^"+String.valueOf(m)+" mod "+String.valueOf(n)+"= ("+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(a)+")"+"%"+String.valueOf(n)+"="+String.valueOf(tmp)+"\n");
+            res.append("$$\\color{white}{"+String.valueOf(a)+"^{"+String.valueOf(m)+"}"+"\\; mod \\;"+String.valueOf(n)+"\\; = (" + String.valueOf(a)+"^{"+String.valueOf(x1)+"} \\;\\times\\;"+ String.valueOf(a)+"^{"+String.valueOf(x1)+"}\\;\\times\\;"+String.valueOf(a)+")\\;mod\\;"+ String.valueOf(n)+"\\;=\\;"+String.valueOf(tmp)+"}$$");
+//            res.append("$$\\color{white}{x^2}$$");
+//            res.append("$$\\color{white}{"+String.valueOf(a)+"^"+String.valueOf(m)+" mod "+String.valueOf(n)+"= ("+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(a)+")"+"%"+String.valueOf(n)+"="+String.valueOf(tmp)+"\n"+"}$$");
         }
 
 
