@@ -3,7 +3,7 @@ using namespace std;
 string hex2bin(string s) 
 { 
 	// hexadecimal to binary conversion 
-	unordered_map<char, string> mp; 
+	map<char, string> mp; 
 	mp['0'] = "0000"; 
 	mp['1'] = "0001"; 
 	mp['2'] = "0010"; 
@@ -29,7 +29,7 @@ string hex2bin(string s)
 string bin2hex(string s) 
 { 
 	// binary to hexadecimal conversion 
-	unordered_map<string, string> mp; 
+	map<string, string> mp; 
 	mp["0000"] = "0"; 
 	mp["0001"] = "1"; 
 	mp["0010"] = "2"; 
