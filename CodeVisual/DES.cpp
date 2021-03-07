@@ -228,7 +228,7 @@ string encrypt(string pt, vector<string> rkb, vector<string> rk)
 } 
 int main() 
 { 
-	freopen("des_output.txt","w",stdout);
+//	freopen("des_output.txt","w",stdout);
 
 	// pt is plain text 
 	string pt, key; 
@@ -237,8 +237,8 @@ int main()
 	cout<<"Enter key(in hexadecimal): "; 
 	cin>>key;*/
 
-	pt = "0123456789ABCDEF";
-	key = "133457799BBCDFF1"; 
+	pt = "25EA45B3FBFBAE3E"; 
+	key = "F90C3770C45B6CD9"; 
 	// Key Generation 
 
 	// Hex to binary 

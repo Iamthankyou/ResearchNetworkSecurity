@@ -88,7 +88,12 @@ void GenKey(unsigned int K1, unsigned int K2, unsigned int key1[16], unsigned in
 		D1 = ShiftLeft(D0,s[i]);
 		key1[i] = KPC2(C1,D1,0,24);
 		key2[i] = KPC2(C1,D1,24,48);
+		
 		C0=C1; D0 = D1;	
+	
+		printf("\nC[%d] = %X",i+1,C1);
+		printf("	D[%d] = %X",i+1,D1);
+
 	}
 }
 
@@ -272,6 +277,10 @@ void MahoaDES(unsigned int M1, unsigned int M2, unsigned int K1, unsigned int K2
 	unsigned int L1, R1;
 	unsigned int FP;
 	
+	for (int i=0; i<16; i++){
+		printf("\nK[%d]=%7X %7X",i+1,key1[i],key2[i]);
+	}
+	
 	for(int i = 0; i < 16; i++)
 	{
 		FP = F(L0,R0,key1[i],key2[i]);
@@ -279,7 +288,6 @@ void MahoaDES(unsigned int M1, unsigned int M2, unsigned int K1, unsigned int K2
 		R0 = R1;	 L0 = L1;
 		printf("\nL[%d] = %X",i+1,L1);
 		printf("	R[%d] = %X",i+1,R1);
-
 	}
 	
 	printf("\nEnd 16 times loop:\n");
@@ -315,26 +323,26 @@ void GiaiMaDES(unsigned int M1, unsigned int M2, unsigned int K1, unsigned int K
 
 int main()
 {
-	unsigned int K1 = 0x13345779; //4byte
-	unsigned int K2 = 0x9BBCDFF1;
-//	printf("\nKhoa K = "); ShowByte(K1); ShowByte(K2);
-	printf("K1 = %X K2 = %X",K1,K2);
-	unsigned int M1 = 0x01234567;
-	unsigned int M2 = 0x89ABCDEF;
-//	printf("\nBan tin M = "); ShowByte(M1); ShowByte(M2);
+	unsigned int K1 = 0x35137844; //4byte
+	unsigned int K2 = 0x65A003DD;
+	printf("\nKhoa K = "); ShowByte(K1); ShowByte(K2);
+//	printf("K1 = %X K2 = %X",K1,K2);
+	unsigned int M1 = 0x950FB522;
+	unsigned int M2 = 0xA6E2B1DB;
+	printf("\nBan tin M = "); ShowByte(M1); ShowByte(M2);
 	unsigned int C1, C2;
 //	
-//	unsigned int C0,D0;
-//	C0 = PC1CD(K1,K2,0,28);
-//	D0 = PC1CD(K1,K2,28,56);
-//	
-//	int s[] = {1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1};	
-//	
-//	printf("\nC0=%X D0=%X",C0,D0);
-//	
+	unsigned int C0,D0;
+	C0 = PC1CD(K1,K2,0,28);
+	D0 = PC1CD(K1,K2,28,56);
+	
+	int s[] = {1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1};	
+	
+	printf("\nC0=%X D0=%X",C0,D0);
+	
 //	unsigned int CC1,DD1;
 //	CC1 = ShiftLeft(C0,s[0]);
-//	DD1 = ShiftLeft(D0,s[0]);
+//	DD1 = ShiftLeft(D0,s[0]); 
 //	printf("\nC1 = %X D1=%X",CC1,DD1);
 	MahoaDES(M1, M2, K1, K2, C1, C2);
 
