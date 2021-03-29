@@ -210,7 +210,7 @@ unsigned int F(unsigned int L0, unsigned int R0, unsigned int key1, unsigned int
 //	printf("ER01 = %X\n",ER01);
 //	printf("ER02 = %X\n",ER02);
 
-	//Buoc 5. phép XOR, tính A = E[R0] + K1.
+	//Buoc 5. phÃ©p XOR, tÃ­nh A = E[R0] + K1.
 	unsigned int A1, A2;
 	A1 = key1 ^ ER01;
 	A2 = key2 ^ ER02;
@@ -227,7 +227,7 @@ unsigned int F(unsigned int L0, unsigned int R0, unsigned int key1, unsigned int
 	return FP;
 }
 
-unsigned int HoanviIP_1(unsigned int M1, unsigned int M2, int chiso1, int chiso2)
+unsigned int HoanviIP_1(unsigned int M2, unsigned int M1, int chiso1, int chiso2)
 {
 	int IP1[] =  {40, 8, 48, 16, 56, 24, 64, 32, 39, 7, 47, 15, 55, 23, 63, 31, 38, 6, 46, 14, 54, 22, 62, 30, 37, 5, 45, 13, 53, 21, 61, 29, 36, 4, 44, 12, 52, 20, 60, 28, 35, 3, 43, 11, 51, 19, 59, 27, 34, 2, 42, 10, 50, 18, 58, 26, 33, 1, 41, 9, 49, 17, 57, 25};
 	unsigned int ipm1 = 0;
