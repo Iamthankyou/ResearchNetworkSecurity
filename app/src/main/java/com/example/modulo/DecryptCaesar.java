@@ -42,10 +42,10 @@ public class DecryptCaesar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encrypt_caesar);
 
-        btnSubmitDeCaesar = (Button) findViewById(R.id.btnSubmitDeCaesar);
-        etDeCaesar = (EditText) findViewById(R.id.etDeCaesar);
-        etDeKeyCaesar = (EditText) findViewById(R.id.etDeKeyCaesar);
-        textView = (TextView) findViewById(R.id.tvRes);
+        btnSubmitDeCaesar = (Button) findViewById(R.id.btnGen1);
+        etDeCaesar = (EditText) findViewById(R.id.etEn1);
+        etDeKeyCaesar = (EditText) findViewById(R.id.etKey1);
+        textView = (TextView) findViewById(R.id.tvRes1);
 
         textView.setVisibility(View.GONE);
 

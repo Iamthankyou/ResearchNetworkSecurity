@@ -24,8 +24,8 @@ public class CheckPrime extends AppCompatActivity {
 
         res = new StringBuilder();
         btnSubmit = (Button)findViewById(R.id.btnFactPrime);
-        etN = (EditText)findViewById(R.id.etDeKeyCaesar);
-        tvRes = (TextView)findViewById(R.id.tvRes);
+        etN = (EditText)findViewById(R.id.etKey1);
+        tvRes = (TextView)findViewById(R.id.tvRes1);
         tvRes.setVisibility(View.GONE);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {

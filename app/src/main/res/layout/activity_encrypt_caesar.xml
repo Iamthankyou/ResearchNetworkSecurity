@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/etDeCaesar"
+        android:id="@+id/etEn1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etDeKeyCaesar"
+        android:id="@+id/etKey1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -53,7 +53,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/etDeCaesar" />
+        app:layout_constraintTop_toBottomOf="@+id/etEn1" />
 
     <TextView
         android:id="@+id/textView2"
@@ -62,11 +62,11 @@
         android:layout_marginStart="10dp"
         android:text="KEY = "
         android:textSize="20dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etDeKeyCaesar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etKey1"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnSubmitDeCaesar"
+        android:id="@+id/btnGen1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
@@ -76,10 +76,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDeKeyCaesar" />
+        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
 
     <TextView
-        android:id="@+id/tvRes"
+        android:id="@+id/tvRes1"
         android:textIsSelectable="true"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -91,6 +91,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSubmitDeCaesar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGen1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
