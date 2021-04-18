@@ -91,8 +91,8 @@ void GenKey(unsigned int K1, unsigned int K2, unsigned int key1[16], unsigned in
 		
 		C0=C1; D0 = D1;	
 	
-		printf("\nC[%d] = %X",i+1,C1);
-		printf("	D[%d] = %X",i+1,D1);
+		printf("\nC[%d] = %X - %d",i+1,C1,C1);
+		printf("	D[%d] = %X - %d",i+1,D1,D1);
 
 	}
 }
@@ -210,7 +210,7 @@ unsigned int F(unsigned int L0, unsigned int R0, unsigned int key1, unsigned int
 //	printf("ER01 = %X\n",ER01);
 //	printf("ER02 = %X\n",ER02);
 
-	//Buoc 5. phép XOR, tính A = E[R0] + K1.
+	//Buoc 5. phï¿½p XOR, tï¿½nh A = E[R0] + K1.
 	unsigned int A1, A2;
 	A1 = key1 ^ ER01;
 	A2 = key2 ^ ER02;
@@ -295,6 +295,9 @@ void MahoaDES(unsigned int M1, unsigned int M2, unsigned int K1, unsigned int K2
 	printf("R16 = %X\n",R1);
 	C1 = HoanviIP_1(R1,L1,0,32);
 	C2 = HoanviIP_1(R1,L1,32,64);
+
+	// ShowByte(C1);
+	// ShowByte(C2);
 	
 	printf("C=%X %X",C1,C2);
 }

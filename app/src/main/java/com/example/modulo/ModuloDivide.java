@@ -23,7 +23,7 @@ public class ModuloDivide extends AppCompatActivity {
         setContentView(R.layout.activity_modulo_divide);
 
         res = new StringBuilder();
-        etN = (EditText)findViewById(R.id.etN);
+        etN = (EditText)findViewById(R.id.etDeKeyCaesar);
         etM = (EditText)findViewById(R.id.etM);
         etA = (EditText)findViewById(R.id.etA);
         btnSubmit = (Button)findViewById(R.id.btnFactPrime);

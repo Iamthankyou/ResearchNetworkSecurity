@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnModuloDivide;
     private Button btnModuloRevert;
-    private Button btnCheckPrime,btnFactPrime;
+    private Button btnCheckPrime,btnFactPrime,btnCaesar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btnModuloRevert = (Button)findViewById(R.id.btnModuloRevert);
         btnCheckPrime = (Button)findViewById(R.id.btnCheckPrime);
         btnFactPrime = (Button)findViewById(R.id.btnFactPrime);
+        btnCaesar = (Button)findViewById(R.id.btnCaesar);
 
         btnModuloDivide.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,FactPrime.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnCaesar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Caesar.class);
                 startActivity(intent);
             }
         });
