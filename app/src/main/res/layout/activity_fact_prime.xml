@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Monoalphabetic"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
         android:background="@color/purple_200"
@@ -41,7 +41,7 @@
         android:text="N = "
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/Monoalphabetic" />
 
     <Button
         android:id="@+id/btnFactPrime"

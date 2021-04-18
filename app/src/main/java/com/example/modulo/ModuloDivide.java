@@ -28,7 +28,7 @@ public class ModuloDivide extends AppCompatActivity {
         etA = (EditText)findViewById(R.id.etA);
         btnSubmit = (Button)findViewById(R.id.btnFactPrime);
         tvRes = (MathView)findViewById(R.id.tvRes1);
-        textView = (MathView)findViewById(R.id.textView);
+        textView = (MathView)findViewById(R.id.Monoalphabetic);
 
         textView.setText("$$\\color{white}{Modulo\\;B\\;=\\;A^M\\;mod\\;N}$$");
 

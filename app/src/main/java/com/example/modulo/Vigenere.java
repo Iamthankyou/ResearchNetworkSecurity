@@ -80,8 +80,8 @@ public class Vigenere extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vigenere);
 
-        btnSubmit1 = (Button) findViewById(R.id.btnSub1);
-        btnSubmit2 = (Button) findViewById(R.id.btnSub2);
+        btnSubmit1 = (Button) findViewById(R.id.btnSub11);
+        btnSubmit2 = (Button) findViewById(R.id.btnSub22);
         etEn1 = (EditText) findViewById(R.id.etEn1);
         etEn2 = (EditText) findViewById(R.id.etEn2);
         etKey1 = (EditText) findViewById(R.id.etKey1);

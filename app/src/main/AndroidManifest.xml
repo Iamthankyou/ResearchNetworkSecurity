@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Vigenere"></activity>
+        <activity android:name=".Monoalphabetic"></activity>
+        <activity android:name=".Vigenere" />
         <activity android:name=".DecryptCaesar" />
         <activity android:name=".EncryptCaesar" />
         <activity android:name=".Caesar" />

@@ -11,14 +11,16 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnModuloDivide;
     private Button btnModuloRevert;
-    private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere;
+    private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         btnModuloDivide = (Button)findViewById(R.id.btnModuloDivide);
+        btnMonoalphabetic = (Button)findViewById(R.id.btnMonoalphabetic);
         btnModuloRevert = (Button)findViewById(R.id.btnModuloRevert);
         btnCheckPrime = (Button)findViewById(R.id.btnCheckPrime);
         btnFactPrime = (Button)findViewById(R.id.btnFactPrime);
@@ -58,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnMonoalphabetic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Monoalphabetic.class);
+                startActivity(intent);
+            }
+        });
 
         btnCaesar.setOnClickListener(new View.OnClickListener() {
             @Override

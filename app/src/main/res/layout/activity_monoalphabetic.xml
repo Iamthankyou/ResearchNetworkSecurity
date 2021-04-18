@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vigenere">
+    tools:context=".Monoalphabetic">
 
 
     <EditText
@@ -44,23 +44,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnGen2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="288dp"
-        android:text="Key"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
-
-    <Button
-        android:id="@+id/btnSub22"
+        android:id="@+id/btnSub2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="288dp"
         android:text="Giải mã"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGen2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etKey1" />
 
     <TextView
@@ -74,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSub22" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSub2" />
 
     <TextView
         android:id="@+id/textView8"
@@ -115,7 +105,7 @@
         android:layout_height="100dp"
         android:background="@color/purple_200"
         android:gravity="center"
-        android:text="Vigenere"
+        android:text="Monoalphabetic"
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,22 +135,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnGen1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="KEY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
-
-    <Button
-        android:id="@+id/btnSub11"
+        android:id="@+id/btnSub1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Mã hóa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGen1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etKey1" />
 
     <TextView
@@ -176,7 +157,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGen1"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub1"
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
