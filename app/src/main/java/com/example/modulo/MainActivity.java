@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnModuloDivide;
     private Button btnModuloRevert;
-    private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic,btnFairPlay,btnRailFence;
+    private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic,btnFairPlay,btnDSA,btnRailFence ;
     private Button btnEquation,btnChinese, btnEuler, btnPrimitiveRoot, btnLogarithm, btnDiffieHellman, btnRSA, btnElGamal;
 
     @Override
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btnDiffieHellman = (Button) findViewById(R.id.btnDiffieHellman);
         btnRSA = (Button) findViewById(R.id.btnRSA);
         btnElGamal = (Button) findViewById(R.id.btnElGamal);
+        btnDSA = (Button) findViewById(R.id.btnDSA);
 
         btnPrimitiveRoot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -172,6 +173,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ElGamal.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnDSA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DSA.class);
                 startActivity(intent);
             }
         });

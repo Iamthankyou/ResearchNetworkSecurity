@@ -244,6 +244,13 @@
                 android:layout_height="wrap_content"
                 android:text="ElGamal"
                 tools:ignore="Suspicious0dp" />
+
+            <Button
+                android:id="@+id/btnDSA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DSA"
+                tools:ignore="Suspicious0dp" />
             <!--        android:layout_marginStart="10dp"-->
             <!--        android:layout_marginEnd="10dp"-->
             <!--        app:layout_constraintBottom_toBottomOf="parent"-->
