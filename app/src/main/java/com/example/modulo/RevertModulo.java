@@ -21,7 +21,7 @@ public class RevertModulo extends AppCompatActivity {
         setContentView(R.layout.activity_revert_modulo);
 
         res = new StringBuilder();
-        etN = (EditText)findViewById(R.id.etKey1);
+        etN = (EditText)findViewById(R.id.etN);
         etA = (EditText)findViewById(R.id.etA);
         btnSubmit = (Button)findViewById(R.id.btnFactPrime);
         tvRes = (TextView)findViewById(R.id.tvRes1);

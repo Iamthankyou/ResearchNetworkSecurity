@@ -6,112 +6,241 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnModuloDivide"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Modulo Power Divide"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="64dp">
 
-    <Button
-        android:id="@+id/btnModuloRevert"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Modulo Revert"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnModuloDivide"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
 
-    <Button
-        android:id="@+id/btnCheckPrime"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Check Prime"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnModuloRevert"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnModuloDivide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modulo Power Divide"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnModuloDivide2" -->
+            <!--            />-->
 
-    <Button
-        android:id="@+id/btnFactPrime"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="Fact Prime"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCheckPrime"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnModuloDivide2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RSA"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="80dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toTopOf="parent" -->
+            <!--            />-->
 
-    <Button
-        android:id="@+id/btnCaesar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Cersar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFactPrime"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnEquation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Equation"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toTopOf="@+id/btnModuloDivide2"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toTopOf="parent" -->
+            <!--            />-->
 
-    <Button
-        android:id="@+id/btnVigenere"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Vigenere"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCaesar"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnModuloRevert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modulo Revert"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnModuloDivide"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            <!--            />-->
 
-    <Button
-        android:id="@+id/btnMonoalphabetic"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Monoalphabetic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVigenere"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnCheckPrime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Prime"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnModuloRevert"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            <!--            />-->
 
-    <Button
-        android:id="@+id/btnPlayFair"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="FlayFair"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMonoalphabetic"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnFactPrime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fact Prime"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnCheckPrime"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            <!--            />-->
+
+            <Button
+                android:id="@+id/btnCaesar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cersar"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnFactPrime"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            />
+
+            <Button
+                android:id="@+id/btnVigenere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vigenere"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnCaesar"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            />
+
+            <Button
+                android:id="@+id/btnMonoalphabetic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monoalphabetic"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnVigenere"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+
+            <Button
+                android:id="@+id/btnPlayFair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FlayFair"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnMonoalphabetic"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            />
+
+            <Button
+                android:id="@+id/btnRailFence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RailFence"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnPlayFair"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            />
+
+            <Button
+                android:id="@+id/btnChinese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Chinese Modulo Themrem"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginTop="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnRailFence"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            />
+
+            <Button
+                android:id="@+id/btnPrimitive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primitive Root"
+                tools:ignore="Suspicious0dp" />
+
+            <Button
+                android:id="@+id/btnEuler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Euler"
+                tools:ignore="Suspicious0dp" />
+
+            <Button
+                android:id="@+id/btnLogarithm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logarithm"
+                tools:ignore="Suspicious0dp" />
+            <!--        android:layout_marginStart="10dp"-->
+            <!--        android:layout_marginEnd="10dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.0"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/btnChinese"-->
+            <!--        app:layout_constraintVertical_bias="0.0" -->
+            />
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

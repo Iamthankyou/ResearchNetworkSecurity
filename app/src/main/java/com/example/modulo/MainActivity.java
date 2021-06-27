@@ -11,13 +11,13 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnModuloDivide;
     private Button btnModuloRevert;
-    private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic,btnFairPlay;
+    private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic,btnFairPlay,btnRailFence;
+    private Button btnEquation,btnChinese, btnEuler, btnPrimitiveRoot, btnLogarithm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         btnModuloDivide = (Button)findViewById(R.id.btnModuloDivide);
         btnMonoalphabetic = (Button)findViewById(R.id.btnMonoalphabetic);
@@ -27,11 +27,33 @@ public class MainActivity extends AppCompatActivity {
         btnCaesar = (Button)findViewById(R.id.btnCaesar);
         btnVigenere = (Button)findViewById(R.id.btnVigenere);
         btnFairPlay = (Button)findViewById(R.id.btnPlayFair);
+        btnRailFence = (Button)findViewById(R.id.btnRailFence);
+        btnEquation = (Button)findViewById(R.id.btnEquation);
+        btnChinese = (Button)findViewById(R.id.btnChinese);
+        btnEuler = (Button) findViewById(R.id.btnEuler);
+        btnPrimitiveRoot = (Button) findViewById(R.id.btnPrimitive);
+        btnLogarithm = (Button) findViewById(R.id.btnLogarithm);
+
+        btnPrimitiveRoot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PrimitiveRoot.class);
+                startActivity(intent);
+            }
+        });
 
         btnModuloDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ModuloDivide.class);
+                startActivity(intent);
+            }
+        });
+
+        btnEquation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ChineseMainTheorem.class);
                 startActivity(intent);
             }
         });
@@ -45,10 +67,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnChinese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Chinese.class);
+                startActivity(intent);
+            }
+        });
+
         btnCheckPrime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,CheckPrime.class);
+                startActivity(intent);
+            }
+        });
+        
+        btnLogarithm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Logarit.class);
                 startActivity(intent);
             }
         });
@@ -89,6 +127,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,FairPlay.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRailFence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,FenceRail.class);
+                startActivity(intent);
+            }
+        });
+
+        btnEuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,EulerNumber.class);
                 startActivity(intent);
             }
         });

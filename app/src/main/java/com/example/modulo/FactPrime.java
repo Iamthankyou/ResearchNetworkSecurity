@@ -25,7 +25,7 @@ public class FactPrime extends AppCompatActivity {
 
         res = new StringBuilder();
         btnSubmit = (Button)findViewById(R.id.btnFactPrime);
-        etN = (EditText)findViewById(R.id.etKey1);
+        etN = (EditText)findViewById(R.id.etN);
         tvRes = (TextView)findViewById(R.id.tvRes1);
         tvRes.setVisibility(View.GONE);
 

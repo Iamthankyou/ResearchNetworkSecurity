@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".FairPlay"></activity>
+        <activity android:name=".Logarit"></activity>
+        <activity android:name=".EulerNumber" />
+        <activity android:name=".PrimitiveRoot" />
+        <activity android:name=".Chinese" />
+        <activity android:name=".RSA" />
+        <activity android:name=".ChineseMainTheorem" />
+        <activity android:name=".FenceRail" />
+        <activity android:name=".FairPlay" />
         <activity android:name=".Monoalphabetic" />
         <activity android:name=".Vigenere" />
         <activity android:name=".DecryptCaesar" />

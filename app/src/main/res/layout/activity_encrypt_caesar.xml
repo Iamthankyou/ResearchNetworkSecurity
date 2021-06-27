@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etKey1"
+        android:id="@+id/etN"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -62,7 +62,7 @@
         android:layout_marginStart="10dp"
         android:text="KEY = "
         android:textSize="20dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etKey1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etN"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
 
     <TextView
         android:id="@+id/tvRes1"

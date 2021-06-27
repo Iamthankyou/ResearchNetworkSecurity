@@ -44,7 +44,7 @@ public class EncryptCaesar extends AppCompatActivity {
 
         btnSubmitEnCaesar = (Button) findViewById(R.id.btnGen1);
         etEnCaesar = (EditText) findViewById(R.id.etEn1);
-        etEnKeyCaesar = (EditText) findViewById(R.id.etKey1);
+        etEnKeyCaesar = (EditText) findViewById(R.id.etN);
         textView = (TextView) findViewById(R.id.tvRes1);
 
         textView.setVisibility(View.GONE);

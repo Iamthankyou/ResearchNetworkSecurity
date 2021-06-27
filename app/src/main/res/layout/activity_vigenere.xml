@@ -40,7 +40,7 @@
         android:layout_marginStart="10dp"
         android:text="KEY = "
         android:textSize="20dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etKey1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etN"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -49,9 +49,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="288dp"
-        android:text="Key"
+        android:text="LOOP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
+
+    <Button
+        android:id="@+id/btnGen22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="288dp"
+        android:text="Auto"
+        app:layout_constraintStart_toEndOf="@+id/btnGen2"
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
 
     <Button
         android:id="@+id/btnSub22"
@@ -60,8 +69,8 @@
         android:layout_marginTop="288dp"
         android:text="Giải mã"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGen2"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
+        app:layout_constraintStart_toEndOf="@+id/btnGen22"
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
 
     <TextView
         android:id="@+id/tvRes2"
@@ -123,7 +132,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etKey1"
+        android:id="@+id/etN"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -149,9 +158,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="KEY"
+        android:text="LOOP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
+
+    <Button
+        android:id="@+id/btnGen12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="AUTO"
+        app:layout_constraintStart_toEndOf="@+id/btnGen1"
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
 
     <Button
         android:id="@+id/btnSub11"
@@ -160,8 +178,8 @@
         android:layout_marginTop="30dp"
         android:text="Mã hóa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGen1"
-        app:layout_constraintTop_toBottomOf="@+id/etKey1" />
+        app:layout_constraintStart_toEndOf="@+id/btnGen12"
+        app:layout_constraintTop_toBottomOf="@+id/etN" />
 
     <TextView
         android:id="@+id/tvRes1"

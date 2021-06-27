@@ -65,7 +65,7 @@ public class Monoalphabetic extends AppCompatActivity {
         btnSubmit2 = (Button) findViewById(R.id.btnSub2);
         etEn1 = (EditText) findViewById(R.id.etEn1);
         etEn2 = (EditText) findViewById(R.id.etEn2);
-        etKey1 = (EditText) findViewById(R.id.etKey1);
+        etKey1 = (EditText) findViewById(R.id.etN);
         etKey2 = (EditText) findViewById(R.id.etKey2);
         tvRes1 = (TextView) findViewById(R.id.tvRes1);
         tvRes2 = (TextView) findViewById(R.id.tvRes2);

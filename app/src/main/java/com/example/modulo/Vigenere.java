@@ -71,7 +71,7 @@ public class Vigenere extends AppCompatActivity {
         return orig_text;
     }
 
-    private Button btnSubmit1, btnSubmit2, btnGen1, btnGen2;
+    private Button btnSubmit1, btnSubmit2, btnGen1, btnGen2, btnGen12,btnGen22;
     private EditText etEn1,etEn2, etKey1, etKey2;
     private TextView tvRes1, tvRes2;
 
@@ -84,12 +84,14 @@ public class Vigenere extends AppCompatActivity {
         btnSubmit2 = (Button) findViewById(R.id.btnSub22);
         etEn1 = (EditText) findViewById(R.id.etEn1);
         etEn2 = (EditText) findViewById(R.id.etEn2);
-        etKey1 = (EditText) findViewById(R.id.etKey1);
+        etKey1 = (EditText) findViewById(R.id.etN);
         etKey2 = (EditText) findViewById(R.id.etKey2);
         tvRes1 = (TextView) findViewById(R.id.tvRes1);
         tvRes2 = (TextView) findViewById(R.id.tvRes2);
         btnGen1 = (Button) findViewById(R.id.btnGen1);
         btnGen2 = (Button) findViewById(R.id.btnGen2);
+        btnGen12 = (Button) findViewById(R.id.btnGen12);
+        btnGen22 = (Button) findViewById(R.id.btnGen22);
 
         btnGen1.setOnClickListener(f->{
             if (etEn1.getText().toString().trim().length()>0 && etKey1.getText().toString().trim().length()>0){
@@ -103,6 +105,19 @@ public class Vigenere extends AppCompatActivity {
             }
         });
 
+        btnGen12.setOnClickListener(f->{
+            if (etEn1.getText().toString().trim().length()>0 && etKey1.getText().toString().trim().length()>0){
+                etKey1.setText(generateKey2(etEn1.getText().toString(),etKey1.getText().toString()));
+            }
+        });
+
+        btnGen22.setOnClickListener(f->{
+            if (etEn2.getText().toString().trim().length()>0 && etKey2.getText().toString().trim().length()>0){
+                etKey2.setText(generateKey2(etEn2.getText().toString(),etKey2.getText().toString()));
+            }
+        });
+
+
         btnSubmit1.setOnClickListener(f->{
             if (etEn1.getText().toString().trim().length()>0 && etKey1.getText().toString().trim().length()>0){
                 tvRes1.setText(cipherText(etEn1.getText().toString(),etKey1.getText().toString()));
@@ -111,7 +126,7 @@ public class Vigenere extends AppCompatActivity {
 
         btnSubmit2.setOnClickListener(f->{
             if (etEn2.getText().toString().trim().length()>0 && etKey2.getText().toString().trim().length()>0){
-                tvRes2.setText(cipherText(etEn2.getText().toString(),etKey2.getText().toString()));
+                tvRes2.setText(originalText(etEn2.getText().toString(),etKey2.getText().toString()));
             }
         });
 

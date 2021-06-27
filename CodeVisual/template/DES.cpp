@@ -326,12 +326,14 @@ void GiaiMaDES(unsigned int M1, unsigned int M2, unsigned int K1, unsigned int K
 
 int main()
 {
-	unsigned int K1 = 0x35137844; //4byte
-	unsigned int K2 = 0x65A003DD;
+	unsigned int M1 = 0x40A78883; //4byte
+	unsigned int M2 = 0xD0E1D258;
+	unsigned int K1 = 0x089166C3;
+	unsigned int K2 = 0xFDDE9022;
+
 	printf("\nKhoa K = "); ShowByte(K1); ShowByte(K2);
 //	printf("K1 = %X K2 = %X",K1,K2);
-	unsigned int M1 = 0x950FB522;
-	unsigned int M2 = 0xA6E2B1DB;
+
 	printf("\nBan tin M = "); ShowByte(M1); ShowByte(M2);
 	unsigned int C1, C2;
 //	
