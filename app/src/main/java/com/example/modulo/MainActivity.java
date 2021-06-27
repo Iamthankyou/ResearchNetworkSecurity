@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnModuloDivide;
     private Button btnModuloRevert;
     private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic,btnFairPlay,btnRailFence;
-    private Button btnEquation,btnChinese, btnEuler, btnPrimitiveRoot, btnLogarithm;
+    private Button btnEquation,btnChinese, btnEuler, btnPrimitiveRoot, btnLogarithm, btnDiffieHellman, btnRSA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         btnEuler = (Button) findViewById(R.id.btnEuler);
         btnPrimitiveRoot = (Button) findViewById(R.id.btnPrimitive);
         btnLogarithm = (Button) findViewById(R.id.btnLogarithm);
+        btnDiffieHellman = (Button) findViewById(R.id.btnDiffieHellman);
+        btnRSA = (Button) findViewById(R.id.btnRSA);
 
         btnPrimitiveRoot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        
+
         btnLogarithm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,6 +100,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        btnDiffieHellman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,DiffieHellman.class);
+                startActivity(intent);
+            }
+        });
+
 
         btnMonoalphabetic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,5 +158,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnRSA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,RSA.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

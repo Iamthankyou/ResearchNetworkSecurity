@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Logarit"></activity>
+        <activity android:name=".DiffieHellman"></activity>
+        <activity android:name=".Logarit" />
         <activity android:name=".EulerNumber" />
         <activity android:name=".PrimitiveRoot" />
         <activity android:name=".Chinese" />

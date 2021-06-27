@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RSA">
+    tools:context=".DiffieHellman">
 
 
     <EditText
-        android:id="@+id/etMR"
+        android:id="@+id/etXB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/etER"
+        android:id="@+id/etXA"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -37,7 +37,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:text="m = "
+        android:text="xb = "
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -48,13 +48,13 @@
         android:layout_height="33dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:text="e = "
+        android:text="xa  = "
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/etQR"
+        android:id="@+id/etAD"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -71,7 +71,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:text="q = "
+        android:text="a = "
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -94,7 +94,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        android:text="p = "
+        android:text="q = "
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -110,7 +110,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMR" />
+        app:layout_constraintTop_toBottomOf="@+id/etXB" />
 
     <TextView
         android:id="@+id/tvResult"

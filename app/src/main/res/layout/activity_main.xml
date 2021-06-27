@@ -32,7 +32,7 @@
             <!--            />-->
 
             <Button
-                android:id="@+id/btnModuloDivide2"
+                android:id="@+id/btnRSA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="RSA"
@@ -226,6 +226,13 @@
 
             <Button
                 android:id="@+id/btnLogarithm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logarithm"
+                tools:ignore="Suspicious0dp" />
+
+            <Button
+                android:id="@+id/btnDiffieHellman"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Logarithm"
