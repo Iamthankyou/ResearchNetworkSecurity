@@ -235,7 +235,14 @@
                 android:id="@+id/btnDiffieHellman"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Logarithm"
+                android:text="DiffieHellman"
+                tools:ignore="Suspicious0dp" />
+
+            <Button
+                android:id="@+id/btnElGamal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ElGamal"
                 tools:ignore="Suspicious0dp" />
             <!--        android:layout_marginStart="10dp"-->
             <!--        android:layout_marginEnd="10dp"-->

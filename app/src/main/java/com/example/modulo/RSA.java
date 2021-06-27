@@ -34,6 +34,7 @@ public class RSA extends AppCompatActivity {
 
                 StringBuilder s = new StringBuilder();
 
+                s.append("Sinh khóa" + "\n");
                 int n = p*q;
                 s.append("n=p*q="+String.valueOf(p) + "*" + String.valueOf(q) + "=" + String.valueOf(n) + "\n");
 
@@ -51,10 +52,14 @@ public class RSA extends AppCompatActivity {
                 s.append("PU = {e,n} = " + String.valueOf(e) + ", " + String.valueOf(n) + "\n");
                 s.append("PR = {d,n} = " + String.valueOf(d) + ", " + String.valueOf(n) + "\n");
 
+                s.append("An mã hóa" + "\n");
+
                 s.append("M = " + String.valueOf(m) + "\n");
 
                 int C1 = (int)getModulo(n,d,m);
                 s.append("C1 = M^d mod n = " + String.valueOf(m) + "^" + String.valueOf(d) + " mod " + String.valueOf(n) +" = " + String.valueOf(C1) + "\n");
+
+                s.append("Ba giải mã" + "\n");
 
                 int M = (int)getModulo(n,e,C1);
                 s.append("M = C1^e mod n = " + String.valueOf(C1) + "^" + String.valueOf(e) + " mod " + String.valueOf(n) +" = " + String.valueOf(M) + "\n");

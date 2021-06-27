@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnModuloDivide;
     private Button btnModuloRevert;
     private Button btnCheckPrime,btnFactPrime,btnCaesar,btnVigenere,btnMonoalphabetic,btnFairPlay,btnRailFence;
-    private Button btnEquation,btnChinese, btnEuler, btnPrimitiveRoot, btnLogarithm, btnDiffieHellman, btnRSA;
+    private Button btnEquation,btnChinese, btnEuler, btnPrimitiveRoot, btnLogarithm, btnDiffieHellman, btnRSA, btnElGamal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogarithm = (Button) findViewById(R.id.btnLogarithm);
         btnDiffieHellman = (Button) findViewById(R.id.btnDiffieHellman);
         btnRSA = (Button) findViewById(R.id.btnRSA);
+        btnElGamal = (Button) findViewById(R.id.btnElGamal);
 
         btnPrimitiveRoot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -167,5 +168,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnElGamal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ElGamal.class);
+                startActivity(intent);
+            }
+        });
     }
 }
