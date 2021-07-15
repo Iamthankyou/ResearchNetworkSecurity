@@ -34,6 +34,7 @@ public class ModuloDivide extends AppCompatActivity {
 
 //        tvRes.setVisibility(View.GONE);
 
+
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +60,8 @@ public class ModuloDivide extends AppCompatActivity {
 
 //        tvRes.setMovementMethod(new ScrollingMovementMethod());
 
+
+
     }
 
     private long getModulo(long n, long m, long a){
@@ -77,7 +80,7 @@ public class ModuloDivide extends AppCompatActivity {
             tmp = getModulo(n,m/2,a);
             long tmp1 = tmp;
             tmp = (tmp*tmp)%n;
-            res.append("$$\\color{white}{"+String.valueOf(a)+"^{"+String.valueOf(m)+"}"+"\\; mod \\;"+String.valueOf(n)+"\\; = (" + String.valueOf(a)+"^{"+String.valueOf(x1)+"} \\;\\times\\;"+ String.valueOf(a)+"^{"+String.valueOf(x1)+"})\\;mod\\;"+ String.valueOf(n)+"\\;=\\;"+String.valueOf(tmp)+"}$$");
+            res.append("$$\\color{white}{"+String.valueOf(a)+"^{"+String.valueOf(m)+"}"+"\\;m\\;"+String.valueOf(n)+"\\;=(" + String.valueOf(a)+"^{"+String.valueOf(x1)+"}\\;\\times\\;"+ String.valueOf(a)+"^{"+String.valueOf(x1)+"})\\;m\\;"+ String.valueOf(n)+"\\;=\\;"+String.valueOf(tmp)+"}$$");
 //            res.append(String.valueOf(a)+"\\{^}"+String.valueOf(m)+" mod "+String.valueOf(n)+"= ("+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+")"+"%"+String.valueOf(n)+"="+String.valueOf(tmp)+"\n");
         }
         else{
@@ -85,7 +88,7 @@ public class ModuloDivide extends AppCompatActivity {
             tmp = getModulo(n,m/2,a);
             long tmp1 = tmp;
             tmp = (a*tmp*tmp)%n;
-            res.append("$$\\color{white}{"+String.valueOf(a)+"^{"+String.valueOf(m)+"}"+"\\; mod \\;"+String.valueOf(n)+"\\; = (" + String.valueOf(a)+"^{"+String.valueOf(x1)+"} \\;\\times\\;"+ String.valueOf(a)+"^{"+String.valueOf(x1)+"}\\;\\times\\;"+String.valueOf(a)+")\\;mod\\;"+ String.valueOf(n)+"\\;=\\;"+String.valueOf(tmp)+"}$$");
+            res.append("$$\\color{white}{"+String.valueOf(a)+"^{"+String.valueOf(m)+"}"+"\\;m\\;"+String.valueOf(n)+"\\;=(" + String.valueOf(a)+"^{"+String.valueOf(x1)+"}\\;\\times\\;"+ String.valueOf(a)+"^{"+String.valueOf(x1)+"}\\;\\times\\;"+String.valueOf(a)+")\\;m\\;"+ String.valueOf(n)+"\\;=\\;"+String.valueOf(tmp)+"}$$");
 //            res.append("$$\\color{white}{x^2}$$");
 //            res.append("$$\\color{white}{"+String.valueOf(a)+"^"+String.valueOf(m)+" mod "+String.valueOf(n)+"= ("+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(tmp1)+"^"+String.valueOf(m/2)+"x"+String.valueOf(a)+")"+"%"+String.valueOf(n)+"="+String.valueOf(tmp)+"\n"+"}$$");
         }
